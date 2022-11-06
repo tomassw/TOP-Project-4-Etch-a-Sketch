@@ -1,5 +1,7 @@
-.container {
-    border: 1px black solid;
-    width: 16px;
-    height: 16px;
+.board {
+    border: 1px solid black;
+    width: 500px;
+    height: 500px;
+
+    display: grid;
 }
