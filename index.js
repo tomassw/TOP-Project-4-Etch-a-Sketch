@@ -68,3 +68,4 @@ document.querySelector('.board').addEventListener('click', (e) => {
     }
 })
 
+

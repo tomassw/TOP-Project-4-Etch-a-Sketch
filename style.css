@@ -127,9 +127,9 @@ button:hover {
 }
 
 .eraserButton:hover {
-    color: white;
+    color: gray;
+    text-decoration: line-through;
 }
-
 
 
 .grayButton {
