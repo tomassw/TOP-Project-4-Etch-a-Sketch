@@ -1,5 +1,5 @@
 let color = 'black';
-let click = true;
+let click = false;
 
 function populateBoard(size) {
     let board = document.querySelector('.board');
