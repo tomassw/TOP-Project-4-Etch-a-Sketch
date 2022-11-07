@@ -100,12 +100,30 @@ button:hover {
 .randomButton {
     color: black;
     border: 1px black solid;
-    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    background: radial-gradient(circle farthest-corner at 30% 40%,  rgba(255,94,247,1) 17.8%, #43e97b, rgba(2,245,255,1) 100.2% );
+    background-size: 300% 300%;
+    animation: color 4s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
 }
 
 .randomButton:hover {
     color: black;
     background: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
+    background-size: 300% 300%;
+    animation: color 2s ease-in-out infinite;
 }
 
 .eraserButton:hover {
