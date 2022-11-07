@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
+    justify-content: center;
 
     font-family: 'Major Mono Display', sans-serif;
 }
@@ -77,6 +78,7 @@ button:hover {
 .blackButton {
     background-color: black;
     color: white;
+    margin-left: 6px;
 }
 
 .blackButton:hover {
@@ -137,3 +139,8 @@ input {
 .setSize:hover {
     text-shadow: 1px 1px 6px white;
 }
+
+.resetButton:hover {
+    color: transparent;
+}
+

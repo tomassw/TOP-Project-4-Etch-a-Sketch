@@ -23,11 +23,17 @@ function populateBoard(size) {
 
 populateBoard(16);
 
+let setSize = document.querySelector('.setSize');
+
 function changeSize(input) {
     if (input >=2 && input <= 100) {
         populateBoard(input);
-    } else console.log("too many squares");
-    
+        if (setSize.textContent !== 'set size') {
+            setSize.textContent = 'set size';
+        }
+    } else  {
+       setSize.textContent = 'Value must be between 2 and 100';
+    }
 }
 
 function colorSquare() {
@@ -61,3 +67,4 @@ document.querySelector('.board').addEventListener('click', (e) => {
         }
     }
 })
+
