@@ -55,9 +55,9 @@ document.querySelector('.board').addEventListener('click', (e) => {
     if (e.target.tagName != "button") {
         click = !click;
         if(click) { 
-            document.querySelector('.mode').textContent = "Mode: Coloring";
+            document.querySelector('.mode').textContent = "mode: coloring";
         } else {
-            document.querySelector('.mode').textContent = "Mode: Not coloring";
+            document.querySelector('.mode').textContent = "mode: not coloring";
         }
     }
 })

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Press+Start+2P&display=swap');
+
 .flex-container {
     height: 100vh;
     width: 100vw;
@@ -5,7 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(beige, #9F8C76);
+    background-color: black;
+
+    font-family: 'Major Mono Display', sans-serif;
 }
 
 .board {
@@ -39,6 +43,11 @@
 .title {
     display: flex;
     justify-content: center;
+    color: white;
+
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 30px;
+    margin: 20px;
 }
 
 .buttons {
@@ -47,13 +56,18 @@
 }
 
 button {
-    padding:0.3em 1,2em;
+    border: 1px white solid;
+
+   padding: 0.3em 1.2em;
+   /*padding: 5px 15px;*/
     margin: 0 0.3em 0.3em 0;
     /*border-radius: 2em;*/
     text-decoration: none;
     font-weight: 600;
     text-align: center;
-    transition: all 0.2s;
+    transition: all 0.5s;
+
+    font-family: 'Major Mono Display', sans-serif;
 }
 
 button:hover {
@@ -78,22 +92,48 @@ button:hover {
 .grayButton:hover {
     background-color: white;
     color: gray;
+    border: 1px black solid;
 }
 
 .randomButton {
     color: black;
-    background: linear-gradient(0.25turn, magenta, white, lightblue);
+    border: 1px black solid;
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
 }
 
 .randomButton:hover {
     color: black;
-    background: linear-gradient(0.35turn, magenta, white, lightgreen);
+    background: linear-gradient( 68.3deg,  rgba(245,177,97,1) 0.4%, rgba(236,54,110,1) 100.2% );
+}
+
+.eraserButton:hover {
+    color: white;
+}
+
+.grayButton {
+    border: 1px solid gray;
 }
 
 input {
     width: 50px;
+    text-align: center;
+
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
 }
 
 .mode {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.setSize {
+    color: white;
+    background-color: black;
+    border: 0;
+}
+
+.setSize:hover {
+    text-shadow: 1px 1px 6px white;
 }
